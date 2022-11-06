@@ -1,10 +1,9 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { useState } from "react";
 import LanguageSelector from "./languageSelector";
 
 export default function Nav({setDark, dark}) {
-    const [darkMode,setDarkMode] = useState(false);
+    
     
     return (
         <nav className="py-10 mb-10 flex justify-between">

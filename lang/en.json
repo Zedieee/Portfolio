@@ -1,0 +1,10 @@
+{
+    "index":{
+        "title":"Portfolio"
+    },
+    "nav":{
+        "hi":"Hi, I'm ",
+        "dev":"Web Developer",
+        "about":"I'm a web developer with a passion for creating beautiful and functional websites."
+    }
+}

@@ -1,8 +1,13 @@
 import React from "react";
+import { useRouter } from 'next/router'
+
 
 export default function languageSelector() {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const router = useRouter();
+
   const changeLanguage = (e) => {
-    console.log(e.target.value);
+    router.push(router.pathname, router.pathname, { locale: e.target.value });
   };
 
   return (
