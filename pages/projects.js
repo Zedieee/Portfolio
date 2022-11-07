@@ -1,17 +1,12 @@
-import Head from "next/head";
-import { useState } from "react";
-import Nav from "../Components/nav";
-import Me from "../Components/me";
-import Social from "../Components/social";
-import ImageDev from "../Components/imageDev";
-import Services from "../Components/services";
+import React from "react";
 import Proyects from "../Components/proyects";
+import Head from "next/head";
+import Nav from "../Components/nav";
 import LanguageSelector from "../Components/languageSelector";
 
-export default function Home(props) {
-  const [dark, setDark] = useState(false);
-  const { index, me, services, proyects, nav } = props;
-
+export default function Projects(props) {
+  const [dark, setDark] = React.useState(false);
+  const { index, nav, proyects } = props;
   return (
     <div className={dark ? "dark" : ""}>
       <Head>
@@ -22,22 +17,18 @@ export default function Home(props) {
 
       <main className="bg-white px-5 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen  dark:text-white">
-          <div>
+          <div >
             <Nav setDark={setDark} dark={dark} nav={nav} />
-            <LanguageSelector  />
-          </div>
 
-          <Me me={me} />
-          <Social />
-          <ImageDev />
+          </div>
+          <div className="py-10">
+            <Proyects proyects={proyects} />
+          </div>
         </section>
-        <Services services={services} />
-        <Proyects proyects={proyects} />
       </main>
     </div>
   );
 }
-
 export async function getStaticProps({ locale }) {
   const res = await import(`../lang/${locale}.json`);
 

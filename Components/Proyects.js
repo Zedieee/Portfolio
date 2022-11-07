@@ -7,14 +7,14 @@ import web5 from "/public/web5.png";
 import web1 from "/public/web1.png";
 import web6 from "/public/web6.png";
 
-export default function Proyects() {
-  const css = { width: '100%', height: 'auto' }
+export default function Proyects({proyects}) {
+
     return(
-        <section>
-        <div>
-          <h3 className="text-3xl py-1"> Proyects</h3>
-          <p className="text-md py-2 leading-8 text-gray-800">
-            These are some of the projects I have worked on.
+        <section id="projects">
+        <div className="dark:text-white">
+          <h3 className="text-3xl py-1"> {proyects.title}</h3>
+          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            {proyects.desc}
            </p>
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -30,12 +30,7 @@ export default function Proyects() {
           <div className="basis-1/3 flex-1">
             <Image src={web4} alt="web4" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
           </div>
-          <div className="basis-1/3 flex-1">
-            <Image src={web5} alt="web5" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-           </div>
-          <div className="basis-1/3 flex-1">
-            <Image src={web6} alt="web6" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-          </div>
+
         </div>
       </section>
     )

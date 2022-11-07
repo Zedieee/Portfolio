@@ -11,9 +11,10 @@ export default function languageSelector() {
   };
 
   return (
-    <li>
+    <div className="md:px-14">
       <select
         onChange={changeLanguage}
+        defaultValue={router.locale}
         className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
       >
         <option className="text-black" value="en">
@@ -23,6 +24,6 @@ export default function languageSelector() {
           Spanish
         </option>
       </select>
-    </li>
+      </div>
   );
 }
