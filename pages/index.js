@@ -3,9 +3,9 @@ import { useState } from "react";
 import Nav from "../Components/nav";
 import Me from "../Components/me";
 import Social from "../Components/social";
-import ImageDev from "../Components/imageDev";
-import Services from "../Components/services";
-import Proyects from "../Components/proyects";
+import ImageDev from "../Components/ImageDev";
+import Services from "../Components/Services";
+import Proyects from "../Components/Proyects";
 import LanguageSelector from "../Components/languageSelector";
 
 export default function Home(props) {

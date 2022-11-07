@@ -1,8 +1,8 @@
 import React from "react";
-import Proyects from "../Components/proyects";
+import Proyects from "../Components/Proyects";
 import Head from "next/head";
 import Nav from "../Components/nav";
-import LanguageSelector from "../Components/languageSelector";
+
 
 export default function Projects(props) {
   const [dark, setDark] = React.useState(false);
