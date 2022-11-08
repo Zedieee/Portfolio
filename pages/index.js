@@ -27,7 +27,7 @@ export default function Home(props) {
             <LanguageSelector  />
           </div>
 
-          <Me me={me} />
+
           <Social />
           <ImageDev />
         </section>
