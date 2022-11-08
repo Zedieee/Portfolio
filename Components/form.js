@@ -36,7 +36,7 @@ export default function Form({ contact }) {
   }
 
   return (
-    <form>
+    <form action="#">
       <div className="form-group mb-6">
         <input
           type="text"
