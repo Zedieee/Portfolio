@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from 'next/router'
 
 
-export default function languageSelector() {
+export default function languageSelector({langSelector}) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const router = useRouter();
 
@@ -18,10 +18,10 @@ export default function languageSelector() {
         className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
       >
         <option className="text-black" value="en">
-          English
+          {langSelector.en } 
         </option>
         <option className="text-black" value="es">
-          Spanish
+          {langSelector.es}
         </option>
       </select>
       </div>

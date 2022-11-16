@@ -20,7 +20,7 @@ export default function Services({services}) {
             </p>
           </div>
           <div className="lg:flex gap-20 ">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-indigo-50">
               <Image src={design} alt="design" width={100} height={100} />
               <h3 className="text-3xl font-bold pt-8 pb-2">
                 <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
@@ -34,7 +34,7 @@ export default function Services({services}) {
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Ilustrator</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-indigo-50">
               <Image src={code} alt="design" width={100} height={100} />
               <h3 className="text-3xl font-bold pt-8 pb-2">
               <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text">
@@ -55,7 +55,7 @@ export default function Services({services}) {
               <p className="text-gray-800 py-1">CSS</p>
 
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-indigo-50">
               <div className="flex justify-center">
              <FaReact className="text-5xl flex w-24 h-24 self-center text-blue-600" />
              </div>

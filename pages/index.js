@@ -10,7 +10,7 @@ import LanguageSelector from "../Components/languageSelector";
 
 export default function Home(props) {
   const [dark, setDark] = useState(false);
-  const { index, me, services, proyects, nav } = props;
+  const { index, me, services, proyects, nav, langSelector } = props;
 
   return (
     <div className={dark ? "dark" : ""}>
@@ -24,7 +24,7 @@ export default function Home(props) {
         <section className="min-h-screen  dark:text-white">
           <div>
             <Nav setDark={setDark} dark={dark} nav={nav} />
-            <LanguageSelector  />
+            <LanguageSelector langSelector={langSelector} />
           </div>
 
           <Me me={me} />
@@ -48,6 +48,7 @@ export async function getStaticProps({ locale }) {
       services: res.default.services,
       proyects: res.default.proyects,
       nav: res.default.nav,
+      langSelector: res.default.langSelector,
     },
   };
 }

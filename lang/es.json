@@ -40,6 +40,13 @@
         "email":"Correo",
         "message":"Mensaje",
         "send":"Enviar",
-        "copy":"Enviame una copia de este mensaje."
+        "copy":"Enviame una copia de este mensaje.",
+        "thanks":"Gracias",
+        "thanksDesc":"tu mensaje se ha enviado correctamente.",
+        "mail":"Contacto desde mi portafolio"
+    },
+    "langSelector":{
+        "es":"Español",
+        "en":"English"
     }
 }

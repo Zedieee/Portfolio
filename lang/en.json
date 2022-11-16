@@ -40,6 +40,13 @@
         "email":"Email",
         "message":"Message",
         "send":"Send",
-        "copy":"Send me a copy of this message."
+        "copy":"Send me a copy of this message.",
+        "thanks":"Thanks",
+        "thanksDesc":"your message has been sent successfully.",
+        "mail":"contact from my portfolio"
+    },
+    "langSelector":{
+        "es":"Español",
+        "en":"English"
     }
 }

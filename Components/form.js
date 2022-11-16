@@ -10,7 +10,7 @@ export default function Form({ contact }) {
 
   const handleSubmit = (e) => { 
     e.preventDefault()
-    console.log('Sending')
+    alert(`${contact.thanks} ${name} ${contact.thanksDesc}`)
   let data = {
       name,
       email,

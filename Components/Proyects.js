@@ -23,13 +23,19 @@ export default function Proyects({proyects}) {
         </div>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1">
+            <a href="https://github.com/Zedieee/league-match-history" target="blank">
             <Image src={web1} alt="web1" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+            </a>
           </div>
           <div className="basis-1/3 flex-1">
+            <a href="https://github.com/Zedieee/REST-API-prueba" target="blank">
             <Image src={web2} alt="web2" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </a>
            </div>
           <div className="basis-1/3 flex-1">
+            <a href="https://github.com/Zedieee/ServerSocket" target="blank">
             <Image src={web3} alt="web3" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+            </a>
           </div>
           <div className="basis-1/3 flex-1">
             <Image src={web4} alt="web4" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
