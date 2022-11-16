@@ -12,8 +12,12 @@ export default function Proyects({proyects}) {
     return(
         <section id="projects">
         <div className="dark:text-white">
-          <h3 className="text-3xl py-1"> {proyects.title}</h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+          <h3 className="text-6xl py-1 font-bold"> 
+          <span className="text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text">
+          {proyects.title}
+          </span>
+         </h3>
+          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white font-medium font-sans">
             {proyects.desc}
            </p>
         </div>
