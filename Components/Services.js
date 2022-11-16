@@ -73,7 +73,7 @@ export default function Services({services}) {
               <p className="text-gray-800 py-1">Express</p>
               <h4 className="py-4 text-teal-500">{services.databases}</h4>
               <p className="text-gray-800 py-1">MySQL</p>
-              <p className="text-gray-800 py-1">SQL</p>
+              <p className="text-gray-800 py-1">SQL</p> 
             </div>
           </div>
         </section>
