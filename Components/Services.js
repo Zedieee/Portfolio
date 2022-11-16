@@ -8,7 +8,10 @@ export default function Services({services}) {
     return(
         <section>
             <div className=" dark:text-white">
-            <h3 className="text-3xl py-1">{services.title}</h3>
+            <h3 className="text-6xl py-1 font-bold">
+              <span className="text-transparent bg-gradient-to-r bg-clip-text from-blue-500 to-green-500">
+              {services.title}
+                </span></h3>
             <p className="text-md py-2 leading-8 text-gray-800  dark:text-white">
               {services.desc}
               <span className="text-teal-500">{services.Comfortable}</span> {services.working} <span className="text-teal-500">{services.English}</span> {services.and}
@@ -18,9 +21,11 @@ export default function Services({services}) {
           <div className="lg:flex gap-20 ">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} alt="design" width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                {services.design}
-              </h3>
+              <h3 className="text-3xl font-bold pt-8 pb-2">
+                <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text ">
+                  {services.design}
+                </span>
+                </h3>
               <p className="py-2">
                 {services.designDesc}
               </p>
@@ -31,7 +36,9 @@ export default function Services({services}) {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={code} alt="design" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
+              <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text ">
                 {services.programming}
+                </span>
               </h3>
               <p className="py-2">
                 {services.programmingDesc}
@@ -52,7 +59,9 @@ export default function Services({services}) {
              <FaReact className="text-5xl flex w-24 h-24 self-center text-blue-600" />
              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
+              <span className="text-transparent bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text ">
               FrameWorks {services.and} {services.databases}
+              </span>
               </h3>
               <p className="py-2">
                 {services.frameworksdesc}
