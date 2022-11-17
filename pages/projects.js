@@ -2,7 +2,7 @@ import React from "react";
 import Proyects from "../Components/Proyects";
 import Head from "next/head";
 import Nav from "../Components/nav";
-
+import ButtonUp from "../Components/buttonUp";
 
 export default function Projects(props) {
   const [dark, setDark] = React.useState(false);
@@ -26,6 +26,7 @@ export default function Projects(props) {
           </div>
         </section>
       </main>
+      <ButtonUp />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import ImageDev from "../Components/ImageDev";
 import Services from "../Components/Services";
 import Proyects from "../Components/Proyects";
 import LanguageSelector from "../Components/languageSelector";
+import ButtonUp from "../Components/buttonUp";
 
 export default function Home(props) {
   const [dark, setDark] = useState(false);
@@ -34,6 +35,7 @@ export default function Home(props) {
         <Services services={services} />
         <Proyects proyects={proyects} />
       </main>
+      <ButtonUp />
     </div>
   );
 }
