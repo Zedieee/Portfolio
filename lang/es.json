@@ -48,5 +48,8 @@
     "langSelector":{
         "es":"Español",
         "en":"English"
+    },
+    "novels":{
+        "title":"Novels"
     }
 }

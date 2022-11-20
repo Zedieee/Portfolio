@@ -11,7 +11,7 @@ import ButtonUp from "../Components/buttonUp";
 
 export default function Home(props) {
   const [dark, setDark] = useState(false);
-  const { index, me, services, proyects, nav, langSelector } = props;
+  const { index, me, services, proyects, nav, langSelector,novels } = props;
 
   return (
     <div className={dark ? "dark" : ""}>
@@ -33,7 +33,7 @@ export default function Home(props) {
           <ImageDev />
         </section>
         <Services services={services} />
-        <Proyects proyects={proyects} />
+        <Proyects proyects={proyects} novels={novels}/>
       </main>
       <ButtonUp />
     </div>
@@ -51,6 +51,7 @@ export async function getStaticProps({ locale }) {
       proyects: res.default.proyects,
       nav: res.default.nav,
       langSelector: res.default.langSelector,
+      novels: res.default.novels,
     },
   };
 }
