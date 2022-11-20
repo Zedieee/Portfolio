@@ -50,6 +50,16 @@
         "en":"English"
     },
     "novels":{
-        "title":"Novels"
+        "title":"Novels",
+        "desc":" Novels Page with ",
+        "and":" and ",
+        "deployed":" Deployed on ",
+        "livedemo":" live Demo ",
+        "pageConfig":" Page Config ",
+        "como":" as a CMS ",
+        "gatsbyConfig":" as a static site generator ",
+        "netlifyConfig":" as a hosting ",
+        "github":" as a version control "
+
     }
 }

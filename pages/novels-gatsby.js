@@ -29,14 +29,14 @@ export default function novels(props) {
         <section className="min-h-screen  dark:text-white">
           <div>
             <Nav setDark={setDark} dark={dark} nav={nav} />
-            <LanguageSelector langSelector={langSelector} />
+  
           </div>
           <div className="text-center p-10">
         <h2 className="py-2 ">
-          <span className="text-5xl font-bold md:text-6xl ">Novels Page with </span>
+          <span className="text-5xl font-bold md:text-6xl ">{novels.desc} </span>
           <span className="text-5xl font-bold text-purple-800 md:text-6xl">Gatsby</span>
         </h2>
-        <h3 className="text-2xl font-light md:text-3xl">and 
+        <h3 className="text-2xl font-light md:text-3xl">{novels.and} 
        <span className="text-5xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-blue-400 via-yellow-400 to-red-500 md:text-5xl"> Contentful</span>
        </h3>
       </div>
@@ -51,32 +51,32 @@ export default function novels(props) {
 
       </div>
       <div>
-        <p className="text-center text-2xl font-light md:text-3xl p-6">Deployed on
+        <p className="text-center text-2xl font-light md:text-3xl p-6">{novels.deployed}
         <span className="text-5xl text-transparent bg-teal-500 bg-clip-text font-bold"> Netlify</span>
         </p>
       </div>
       <div className="flex justify-center p-2">
-        <a href="https://the-great-zedieee-site.netlify.app" target="_blank" rel="noreferrer" className="bg-purple-800 text-white font-bold py-2 px-4 rounded-full hover:bg-purple-600">Live Demo</a>
+        <a href="https://the-great-zedieee-site.netlify.app" target="_blank" rel="noreferrer" className="bg-purple-800 text-white font-bold py-2 px-4 rounded-full hover:bg-purple-600">{novels.livedemo}</a>
       </div>
         </section>
       <section className="min-h-screen  dark:text-white">
         <div className="py-2 text-center   ">
-          <h2 className="text-5xl md:text-6xl font-bold" >Page Config</h2>
+          <h2 className="text-5xl md:text-6xl font-bold" >{novels.pageConfig}</h2>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1">
-            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-blue-400 via-yellow-400 to-red-500 md:text-3xl">Contentful</span> as a CMS</p>
+            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-blue-400 via-yellow-400 to-red-500 md:text-3xl">Contentful</span> {novels.como}</p>
             <Image src={examplesContentful} className="rounded-lg " alt="contentful icon"/>
           </div>
           <div className="basis-1/3 flex-1">
-            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-purple-800 md:text-3xl">Gatsby</span> as a Static Site Generator</p>
+            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-purple-800 md:text-3xl">Gatsby</span> {novels.gatsbyConfig}</p>
             <Image src={web4} className="rounded-lg " alt="web4"/>
             </div>
           <div className="basis-1/3 flex-1">
-            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-teal-500 md:text-3xl">Netlify</span> as a Hosting</p>
+            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-teal-500 md:text-3xl">Netlify</span> {novels.netlifyConfig}</p>
             <Image src={netlifydeploy} className="rounded-lg " alt="netlify icon"/>
             </div>
             <div className="basis-1/3 flex-1">
-            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-black md:text-3xl dark:bg-slate-300">Github</span> as a Version Control</p>
+            <p className="text-2xl md:text-3xl font-semibold p-2"> <span className="text-2xl text-transparent bg-clip-text font-bold bg-black md:text-3xl dark:bg-slate-300">Github</span> {novels.github}</p>
             <Image src={repository} className="rounded-lg " alt="github icon"/>
             </div>
             
