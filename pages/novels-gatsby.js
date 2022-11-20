@@ -4,7 +4,7 @@ import Nav from "../Components/nav";
 import ButtonUp from "../Components/buttonUp";
 import LanguageSelector from "../Components/languageSelector";
 import Image from "next/image";
-import gatsby from  "../public/gatsby.png";
+import gatsby from  "../public/Gatsby.png";
 import contentful from  "../public/contentful.png";
 import netlify from  "../public/netlify.png";
 import examplesContentful from  "../public/examplesContentful.png";
