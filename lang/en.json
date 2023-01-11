@@ -8,7 +8,7 @@
         "about":"I'm a web developer with a passion for creating beautiful and functional websites."
     },
     "services":{
-        "title":"Services I offer",
+        "title":"Skills",
         "desc":" Since I started my career as a web developer, I have worked on a wide range of projects. and",
         "working":" working with",
         "Comfortable":" I am comfortable",
@@ -27,6 +27,22 @@
     "proyects":{
         "title":"Projects",
         "desc":"These are some of the projects I have worked on."
+    },
+    "certificates":{
+        "title":"Certificates",
+        "cert1":"Certification of Responsive Web Design",
+        "issued1":"issued April 17, 2022",
+        "desc1":"Online course of 300 hours of duration - FreeCodeCamp.org",
+        "cert2":"Certification of Angular: De cero a experto (Angular: from zero to expert)",
+        "desc2":"Online course of 44 hours of duration - Fernando Herrera",
+        "issued2":"in progress",
+        "cert3":"Certification of Diseño UX:experiencia de usuario UX/UI + Figma (UX/UI Design: UX/UI + Figma)",
+        "desc3":"Online course of 20  hours of duration - Javier Cañas",
+        "issued3":"in progress",
+        "cert4":"Certification of JavaScript & JQuery Course with bonus VueJS intro",
+        "desc4":"Online course of 17 hours of duration - Ivan Lourenço Gomes, Learn IT University, Andrii Piatakha ",
+        "issued4":"in progress"
+
     },
     "nav":{
         "title":"Portfolio",

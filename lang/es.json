@@ -8,7 +8,7 @@
     "about": "Soy un desarrollador con pasion por crear sitios creativos y funcionales"
   },
   "services": {
-    "title": "Servicios",
+    "title": "Habilidades",
     "desc": " Desde que empece a programar, he trabajado en una variedad de proyectos y ",
     "working": " trabajando en",
     "Comfortable": " me siento comodo",
@@ -27,7 +27,22 @@
   "proyects": {
     "title": "Proyectos",
     "desc": "Algunos de mis proyectos"
-  },
+  }, "certificates":{
+    "title":"Certificados",
+    "cert1":"Certificacion en Responsive Web Design",
+    "issued1":"Abril 17, 2022",
+    "desc1":"Curso en linea con una duracion de 300 horas  - FreeCodeCamp.org",
+    "cert2":"Certificacion en Angular: De cero a experto",
+    "desc2":"Curso en linea con una duracion de 44  horas - Fernando Herrera",
+    "issued2":"En progreso",
+    "cert3":"Certificacion en Diseño UX:experiencia de usuario UX/UI + Figma",
+    "desc3":"Curso en linea con una duracion de 20  horas  - Javier Cañas",
+    "issued3":"En progreso",
+    "cert4":"Certificacion en JavaScript & JQuery Course with bonus VueJS intro",
+    "desc4":"Curso en linea con una duracion de 17  horas - Ivan Lourenço Gomes, Learn IT University, Andrii Piatakha ",
+    "issued4":"En progreso"
+
+},
   "nav": {
     "title": "Portafolio",
     "projects": "Proyectos",

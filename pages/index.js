@@ -8,10 +8,11 @@ import Services from "../Components/Services";
 import Proyects from "../Components/Proyects";
 import LanguageSelector from "../Components/languageSelector";
 import ButtonUp from "../Components/buttonUp";
+import Certificate from "../Components/Certificates";
 
 export default function Home(props) {
   const [dark, setDark] = useState(false);
-  const { index, me, services, proyects, nav, langSelector,novels } = props;
+  const { index, me, services, proyects, nav, langSelector,novels, certificates } = props;
 
   return (
     <div className={dark ? "dark" : ""}>
@@ -33,6 +34,7 @@ export default function Home(props) {
           <ImageDev />
         </section>
         <Services services={services} />
+        <Certificate certificates={certificates} />
         <Proyects proyects={proyects} novels={novels}/>
       </main>
       <ButtonUp />
@@ -52,6 +54,7 @@ export async function getStaticProps({ locale }) {
       nav: res.default.nav,
       langSelector: res.default.langSelector,
       novels: res.default.novels,
+      certificates: res.default.certificates,
     },
   };
 }
