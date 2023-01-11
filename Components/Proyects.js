@@ -34,7 +34,7 @@ export default function Proyects({proyects}) {
             </a>
           </div>
           <div className="basis-1/3 flex-1">
-            <a href="https://github.com/Zedieee/REST-API-prueba" target="blank">
+            <a href="https://nodejs-mysql-restapi-pets-production.up.railway.app/api/pets/" target="blank">
             <Image src={web2} alt="web2" className="rounded-lg " width={'100%'} height={'100%'} layout="responsive"/>
             </a>
            </div>
@@ -44,7 +44,7 @@ export default function Proyects({proyects}) {
             </a>
           </div>
           <div className="basis-3/12 flex-1">
-            <a href="https://github.com/Zedieee/ServerSocket" target="blank">
+            <a href="https://pets-client.vercel.app" target="blank">
             <Image src={web6} alt="web3" className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
             </a>
           </div>
