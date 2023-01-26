@@ -14,7 +14,7 @@ export default function Proyects({proyects}) {
         <section id="projects">
         <div className="dark:text-white">
           <h3 className="text-6xl py-1 font-bold"> 
-          <span className="text-transparent bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text">
+          <span className="text-transparent bg-gradient-to-r from-rose-800 to-slate-800 bg-clip-text">
           {proyects.title}
           </span>
          </h3>

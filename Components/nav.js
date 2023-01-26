@@ -23,7 +23,7 @@ export default function Nav({setDark, dark, nav}) {
           </li>
           <li >
             <a
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+              className="bg-gradient-to-r from-rose-900 to-black text-white px-4 py-2 rounded-md ml-8"
               href={`/${router.locale}/projects`}
               
             >
@@ -32,7 +32,7 @@ export default function Nav({setDark, dark, nav}) {
           </li>
           <li>
             <a
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+              className="bg-gradient-to-r from-rose-900 to-black text-white px-4 py-2 rounded-md ml-8"
               href={`/${router.locale}/Contact`}
 
             >

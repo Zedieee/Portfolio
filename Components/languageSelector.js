@@ -15,7 +15,7 @@ export default function languageSelector({langSelector}) {
       <select
         onChange={changeLanguage}
         defaultValue={router.locale}
-        className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+        className="bg-gradient-to-r from-rose-900 to-black text-white px-4 py-2 rounded-md ml-8"
       >
         <option className="text-black" value="en">
           {langSelector.en } 
