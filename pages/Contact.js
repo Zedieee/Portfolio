@@ -8,10 +8,13 @@ import {
   AiFillGoogleCircle,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import { useRouter } from "next/router";
 
 export default function Contact(props) {
+  const router = useRouter();
+  const data = router.query.dark;
   const { contact, nav } = props;
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(data);
 
   return (
     <div className={dark ? "dark" : ""}>
@@ -73,6 +76,7 @@ export async function getStaticProps({ locale }) {
     props: {
       contact: res.default.contact,
       nav: res.default.nav,
+
     },
   };
 }

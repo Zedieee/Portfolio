@@ -31,13 +31,16 @@ export default function Nav({setDark, dark, nav}) {
             </a>
           </li>
           <li>
-            <a
+            <Link
               className="bg-gradient-to-r from-rose-900 to-black text-white px-4 py-2 rounded-md ml-8"
-              href={`/${router.locale}/Contact`}
+              href={{
+                pathname: `/${router.locale}/Contact`,
+                query: { dark: dark },
+              }}
 
             >
               {nav.Contact}
-            </a>
+            </Link>
           </li>
 
        
