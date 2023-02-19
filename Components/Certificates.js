@@ -4,7 +4,7 @@ export default function Certificate({certificates}) {
         <section id="Certificates">
         <div className="dark:text-white">
           <h3 className="text-6xl py-5 font-bold"> 
-          <span className="text-transparent bg-gradient-to-r from-rose-800 to-slate-800 bg-clip-text">
+          <span className="text-transparent bg-gradient-to-r from-rose-800 dark:to-slate-400  to-slate-800 bg-clip-text">
           {certificates.title}
           </span>
          </h3>

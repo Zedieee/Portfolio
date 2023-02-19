@@ -10,7 +10,7 @@ export default function Services({services}) {
         <section>
             <div className=" dark:text-white">
            <h3 className="text-6xl font-bold py-1">
-            <span className="text-transparent bg-gradient-to-r from-rose-900 to-black bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-rose-900 to-black dark:to-slate-400 bg-clip-text">
           {services.title}
           </span>
          </h3>
