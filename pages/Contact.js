@@ -11,10 +11,8 @@ import {
 import { useRouter } from "next/router";
 
 export default function Contact(props) {
-  const router = useRouter();
-  const data = router.query.dark;
   const { contact, nav } = props;
-  const [dark, setDark] = useState(data);
+  const [dark, setDark] = useState(false);
 
   return (
     <div className={dark ? "dark" : ""}>

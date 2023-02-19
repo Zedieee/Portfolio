@@ -3,8 +3,10 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { IoChevronBack } from "react-icons/io5";
+import { useTheme } from 'next-themes';
 export default function Nav({setDark, dark, nav}) {
         // eslint-disable-next-line react-hooks/rules-of-hooks
+        const {theme, setTheme} = useTheme()
         const router = useRouter();
         const [isNavOpen, setIsNavOpen] = useState(false);
     return (
@@ -59,7 +61,7 @@ export default function Nav({setDark, dark, nav}) {
         <ul className="lg:flex items-center DESKTOP-MENU hidden ">
         
           <li>
-            <BsFillMoonStarsFill onClick={()=> setDark(!dark)} className="cursor-pointer text-2xl" />
+            <BsFillMoonStarsFill onClick={()=> setTheme(theme === 'dark' ? 'light' : 'dark')} className="cursor-pointer text-2xl" />
           </li>
           <li >
             <a

@@ -10,7 +10,9 @@ import LanguageSelector from "../Components/languageSelector";
 import ButtonUp from "../Components/buttonUp";
 import Certificate from "../Components/Certificates";
 
+
 export default function Home(props) {
+  
   const [dark, setDark] = useState(false);
   const { index, me, services, proyects, nav, langSelector,novels, certificates } = props;
 
