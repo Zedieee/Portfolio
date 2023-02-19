@@ -16,23 +16,27 @@ export default function Nav({setDark, dark, nav}) {
 <Link href="/"><IoChevronBack className="text-lg cursor-pointer md:text-2xl" /></Link>
         <h1 className="text-base font-burtons md:text-xl">{nav.title}</h1>
         </div>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="MOBILE-MENU flex lg:hidden ">
+        
+            <div className="flex flex-row w-20 justify-between" >
+            <BsFillMoonStarsFill onClick={()=> setTheme(theme === 'light' ? 'dark' : 'light')} className="cursor-pointer text-2xl" />
+           
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className="HAMBURGER-ICON space-y-2 "
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            <span className="block h-0.5 w-8 animate-pulse dark:bg-white bg-black"></span>
+            <span className="block h-0.5 w-8 animate-pulse dark:bg-white bg-black"></span>
+            <span className="block h-0.5 w-8 animate-pulse dark:bg-white bg-black"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+          <div className={isNavOpen ? "showMenuNav dark:bg-black" : "hideMenuNav"}>
             <div
-              className="absolute top-0 right-0 px-8 py-8"
+              className="absolute top-0 right-0 px-8 py-8 dark:bg-black"
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-gray-600 dark:text-white"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -40,21 +44,22 @@ export default function Nav({setDark, dark, nav}) {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
+                <line  x1="18" y1="6" x2="6" y2="18" />
+                <line  x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a hhref={`/${router.locale}/projects`}>{nav.projects}</a>
+                <a className="dark:text-white" href={`/${router.locale}/projects`}>{nav.projects}</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href={`/${router.locale}/Contact`}>{nav.Contact}</a>
+                <a className="dark:text-white" href={`/${router.locale}/Contact`}>{nav.Contact}</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href={`/${router.locale}/cv`}>CV</a>
+                <a className="dark:text-white" href={`/${router.locale}/cv`}>CV</a>
               </li>
             </ul>
+          </div>
           </div>
         </section>
     
