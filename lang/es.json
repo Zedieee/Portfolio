@@ -26,7 +26,7 @@
   },
   "proyects": {
     "title": "Proyectos",
-    "desc": "Algunos de mis proyectos"
+    "desc": "Algunos de mis proyectos personales"
   }, "certificates":{
     "title":"Certificados",
     "cert1":"Certificacion en Responsive Web Design",
@@ -75,5 +75,9 @@
     "gatsbyConfig": "como generador de sitios estaticos",
     "netlifyConfig": "como hosting",
     "github": "para control de versiones"
+  },
+  "experiencia":{
+      "title":"Experiencia",
+      "desc":" Algunos de los proyectos en los que he trabajado "
   }
 }

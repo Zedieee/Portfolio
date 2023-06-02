@@ -26,7 +26,7 @@
     },
     "proyects":{
         "title":"Projects",
-        "desc":"These are some of the projects I have worked on."
+        "desc":"These are some of the projects I have worked on for personal learning."
     },
     "certificates":{
         "title":"Certificates",
@@ -77,5 +77,9 @@
         "netlifyConfig":" as a hosting ",
         "github":" as a version control "
 
+    },
+    "experiencia":{
+        "title":"Experience",
+        "desc":" I have worked from small websites to large web applications. I have worked as a freelancer and as a full-time employee for companies."
     }
 }
