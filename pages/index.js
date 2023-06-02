@@ -9,7 +9,7 @@ import Proyects from "../Components/Proyects";
 import LanguageSelector from "../Components/languageSelector";
 import ButtonUp from "../Components/buttonUp";
 import Certificate from "../Components/Certificates";
-import Experiencia from "./Experiencia";
+import Experiencia from "../Components/Experiencia";
 
 
 export default function Home(props) {
