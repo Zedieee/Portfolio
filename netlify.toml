@@ -12,3 +12,7 @@
   to = "https://www.brian-g.com/"
   status = 301
   force = true
+
+[[edge_functions]]
+  path = "/*"
+  function = "redirect"
