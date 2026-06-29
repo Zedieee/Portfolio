@@ -1,0 +1,18 @@
+[build]
+  publish = "public"
+  command = "node -e \"console.log('redirect-only deploy')\""
+
+[build.environment]
+  NODE_VERSION = "22"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NETLIFY_SKIP_FRAMEWORK_DETECTION = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "https://www.brian-g.com/"
+  status = 301
+  force = true
+
+[[edge_functions]]
+  path = "/*"
+  function = "redirect"
