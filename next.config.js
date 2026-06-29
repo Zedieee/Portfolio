@@ -1,8 +1,13 @@
+const DESTINATION = 'https://www.brian-g.com/';
 
-module.exports ={
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'es'],
-    
-}
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: DESTINATION,
+        permanent: true,
+      },
+    ];
+  },
 };
